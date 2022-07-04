@@ -11,9 +11,9 @@ const Job = ({ data }) => (
       <Link to={`/${data.company_name}`}>{data.company_name}</Link>
     </Col>
     <Col xs={9}>
-      <a href={data.url} target="_blank" rel="noreferrer">
+      <Link to={{ pathname: data.url }} target="_blank">
         {data.title}
-      </a>
+      </Link>
     </Col>
   </Row>
 )
